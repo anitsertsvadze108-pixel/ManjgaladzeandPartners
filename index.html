@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="ka">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Manjgaladze & Partners — Legal Services</title>
+  <meta name="description" content="Manjgaladze & Partners — Legal services by ხათუნა მანჯგალაძე. Book a consultation." />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --bg:#ffffff;
+      --text:#111111;
+      --muted:#555;
+      --gold:#bfa15a;
+      --accent-contrast:#1a1a1a;
+      --max-width:1100px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:Inter, sans-serif;
+      color:var(--text);
+      background:var(--bg);
+      line-height:1.5;
+    }
+    .container{max-width:var(--max-width);margin:0 auto;padding:24px}
+
+    /* NAV */
+    header{
+      position:sticky;top:0;z-index:40;
+      background:rgba(255,255,255,0.85);
+      backdrop-filter:blur(6px);
+      border-bottom:1px solid rgba(0,0,0,0.04);
+    }
+    .nav{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+    .brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:var(--text)}
+    .brand .logo{
+      width:46px;height:46px;border-radius:8px;
+      background:linear-gradient(135deg,var(--gold),#e8d8a6);
+      display:flex;align-items:center;justify-content:center;
+      font-family:Playfair Display;font-weight:700;
+      color:var(--accent-contrast);
+    }
+    nav ul{display:flex;gap:20px;list-style:none;margin:0;padding:0}
+    nav a{color:var(--muted);text-decoration:none;font-weight:600}
+    .cta{
+      background:linear-gradient(90deg,var(--gold),#d9be71);
+      padding:10px 16px;border-radius:10px;color:var(--accent-contrast);
+      font-weight:700;text-decoration:none;
+    }
+    .mobile-toggle{display:none}
+
+    /* HERO */
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:40px;align-items:center;padding:64px 0}
+    .hero h2{font-family:Playfair Display;font-size:40px;margin:0 0 12px}
+    .lead{color:var(--muted);margin-bottom:22px}
+    .actions{display:flex;gap:14px}
+    .btn{
+      display:inline-flex;align-items:center;gap:10px;
+      padding:12px 18px;border-radius:10px;
+      border:1px solid rgba(0,0,0,0.08);
+      text-decoration:none;font-weight:600;
+      color:var(--text)
+    }
+
+    /* PROFILE CARD */
+    .card{background:#fff;border-radius:14px;box-shadow:0 8px 30px rgba(15,15,15,0.06);overflow:hidden}
+    .photo{height: 600px;;background-size:cover;background-position:center}
+    .meta{padding:18px}
+    .meta h3{margin:0;font-family:Playfair Display}
+    .meta p{margin-top:6px;color:var(--muted)}
+
+    /* SERVICES */
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:50px 0}
+    .service{padding:20px;border-radius:12px;border:1px solid rgba(0,0,0,0.04)}
+    .service h4{margin:0 0 8px;font-family:Playfair Display}
+    .service p{margin:0;color:var(--muted)}
+
+    /* ABOUT */
+    section h3{font-family:Playfair Display;margin-bottom:12px}
+    .about{display:flex;gap:30px;align-items:flex-start}
+
+    footer{
+      padding:34px 0;margin-top:48px;
+      border-top:1px solid rgba(0,0,0,0.04);
+      color:var(--muted)
+    }
+
+    /* MODAL */
+    .modal{
+      position:fixed;inset:0;background:rgba(10,10,10,0.45);
+      display:none;align-items:center;justify-content:center;padding:20px;z-index:80
+    }
+    .modal.open{display:flex}
+    .dialog{background:#fff;border-radius:12px;max-width:520px;width:100%;padding:22px}
+
+    input,textarea,select{
+      width:100%;padding:10px;border-radius:8px;
+      border:1px solid rgba(0,0,0,0.08);font-size:14px
+    }
+
+    /* RESPONSIVE FIX */
+    .photo {
+  width: 100%;
+  max-width: 420px;
+  border-radius: 14px 14px 0 0;
+  overflow: hidden;
+}
+
+.photo img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="container nav">
+    <a class="brand" href="#"><div class="logo">KM</div><h1>Manjgaladze & Partners</h1></a>
+
+    <nav>
+      <button class="mobile-toggle" aria-expanded="false">☰</button>
+      <ul>
+        <li><a href="#services">იურიდიული მომსახურება</a></li>
+        <li><a href="#about">შესახებ</a></li>
+        <li><a href="#contact">კონტაქტი</a></li>
+      </ul>
+    </nav>
+
+    <a class="cta" id="book-now">დაჯავშნე კონსულტაცია</a>
+  </div>
+</header>
+
+<main class="container">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="intro">
+      <h2>ხათუნა მანჯგალაძე <div class=""></div> ადვოკატი & დამფუძნებელი</h2>
+      <p class="lead">საერთაშორისო სტანდარტების შესაბამისი, პერსონალიზებული იურიდიული მომსახურება.</p>
+
+      <div class="actions">
+        <a class="btn" href="#contact">კონტაქტი</a>
+        <a class="btn" id="book-cta">დაჯავშნე კონსულტაცია</a>
+      </div>
+
+      <div style="margin-top:26px;display:flex;gap:30px;">
+        <div>
+          <small style="color:var(--muted)">ოფისი</small><br>
+          <strong>თბილისი, საქართველო</strong>
+        </div>
+        <div>
+          <small style="color:var(--muted)">სამუშაო ენა</small><br>
+          <strong>ქართული • ინგლისური • რუსული</strong>
+        </div>
+      </div>
+    </div>
+
+    <aside class="card profile">
+      <div class="photo" style="background-image:url('https://iuristi.ge/app.iuristi.ge/img/316162683_502241651933010_1488922308379962731_n%20(1).jpg');"></div>
+      <div class="meta">
+        <h3>ხათუნა მანჯგალაძე</h3>
+        <p>15+ წლიანი გამოცდილება კორპორატიულ, ადმინისტრაციულ და სამოქალაქო სამართალში. საქართველოს ადვოკატთა ასოციაციის წევრი.</p>
+      </div>
+    </aside>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <h3>იურიდიული მომსახურება</h3>
+
+    <div class="grid">
+      <div class="service">
+        <h4>კორპორატიული სამართალი</h4>
+        <p>კომპანიის ფორმირება, შესაბამისობა, შეთანხმებები, გაერთიანებები.</p>
+      </div>
+
+      <div class="service">
+        <h4>სამოქალაქო სამართალი</h4>
+        <p>წარმომადგენლობა სასამართლოში — ეფექტური სტრატეგიით.</p>
+      </div>
+
+      <div class="service">
+        <h4>შრომის სამართალი</h4>
+        <p>ხელშეკრულებების შედგენა, განხილვა და მოლაპარაკება.</p>
+      </div>
+
+      <div class="service">
+        <h4>ადმინისტრაციული სამართალი</h4>
+        <p>საჩივრები, სარჩელები, წარმომადგენლობა ადმინისტრაციულ ორგანოებში და სასამართლოში.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <h3>შესახებ</h3>
+
+    <div class="about">
+      <div style="flex:1">
+        <p>სამოქალაქო და ადმინისტრაციული სამართლის სპეციალიზაციის ადვოკატი</p>
+
+        <p style="margin-top:10px;color:var(--muted)">
+          <strong>განათლება:</strong><br>
+          2018-2019 — Chicago-Kent College of Law<br>
+          2011-2013 — ქართულ-ამერიკული უნივერსიტეტი (GAU), სამაგისტრო<br>
+          2007-2011 — ქართულ-ამერიკული უნივერსიტეტი (GAU), საბაკალავრო
+        </p>
+      </div>
+
+      <div style="width:320px">
+        <div style="padding:18px;border:1px solid rgba(0,0,0,0.06);border-radius:12px">
+          <h4 style="margin:0 0 6px">სპეციალიზაცია</h4>
+          <p style="margin:0;color:var(--muted)">შრომითი საკითხები და დავები • ხელშეკრულების მომზადება და სახელშეკრულებო დავები • კორპორაციული სამართალი და კომპანიის რეგისტრაცია</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" style="margin-top:48px">
+    <h3>კონტაქტი & ჯავშანი</h3>
+
+    <div style="display:grid;grid-template-columns:1fr 320px;gap:26px">
+
+      <form id="contact-form">
+        <div style="display:flex;gap:12px;margin-bottom:10px">
+          <input type="text" name="name" placeholder="სახელი, გვარი" required />
+          <input type="email" name="email" placeholder="Email" required />
+        </div>
+
+        <div style="margin-bottom:10px">
+          <input type="text" name="mobile" placeholder="ტელეფონის ნომერი" />
+        </div>
+
+        <div style="margin-bottom:10px">
+          <textarea name="message" rows="5" placeholder="კომენტარი ან მოკლე მიმოხილვა" required></textarea>
+        </div>
+
+        <button type="submit">გაგზავნა</button>
+        <small style="color:var(--muted);margin-left:8px">or call: +995 550 00 33 43</small>
+
+        <div id="contact-response" style="display:none;margin-top:12px;padding:12px;border-radius:8px;background:#f7f7f7"></div>
+      </form>
+
+      <aside style="padding:18px;border-radius:12px;border:1px solid rgba(0,0,0,0.06)">
+        <strong>სამუშაო ენა</strong><br><br>
+        <span>ქართული</span><br>
+        <span>ინგლისური</span><br>
+        <span>რუსული</span>
+      </aside>
+
+    </div>
+  </section>
+
+  <footer>
+    <div style="display:flex;justify-content:space-between;flex-wrap:wrap">
+      <div>
+        <strong>Manjgaladze & Partners</strong><br>
+        © <span id="year"></span> All rights reserved.
+      </div>
+      <div style="color:var(--muted)">Designed with care • Legal disclaimer</div>
+    </div>
+  </footer>
+
+</main>
+
+<!-- MODAL -->
+<div class="modal" id="modal">
+  <div class="dialog">
+    <h3 style="margin-top:0">დაჯავშნე კონსულტაცია</h3>
+
+    <form id="booking-form">
+      <div style="display:flex;gap:12px">
+        <input name="name" placeholder="სახელი, გვარი" required>
+        <input name="email" placeholder="Email" required>
+      </div>
+
+      <div style="margin-top:10px">
+        <input name="phone" placeholder="მობილურის ნომერი">
+      </div>
+
+      <div style="margin-top:10px">
+        <select name="type">
+          <option>20 წუთი</option>
+          <option>40 წუთი</option>
+          <option>1 საათი</option>
+        </select>
+      </div>
+
+      <textarea name="notes" style="margin-top:10px" placeholder="დამატებითი კომენტარი"></textarea>
+
+      <div style="display:flex;gap:10px;justify-content:flex-end;margin-top:12px">
+        <button type="button" id="cancel">გაუქმება</button>
+        <button type="submit">დაჯავშე</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+
+const modal = document.getElementById("modal");
+const cancel = document.getElementById("cancel");
+const bookNow = document.getElementById("book-now");
+const bookCta = document.getElementById("book-cta");
+
+function openModal(){ modal.classList.add("open"); document.body.style.overflow="hidden"; }
+function closeModal(){ modal.classList.remove("open"); document.body.style.overflow="auto"; }
+
+[bookNow,bookCta].forEach(btn => btn?.addEventListener("click", openModal));
+cancel?.addEventListener("click", closeModal);
+modal.addEventListener("click", e => { if(e.target===modal) closeModal(); });
+
+document.getElementById("contact-form").addEventListener("submit", e=>{
+  e.preventDefault();
+  const resp = document.getElementById("contact-response");
+  resp.style.display="block";
+  resp.textContent="გმადლობთ — თქვენი შეტყობინება მიღებულია!";
+  e.target.reset();
+});
+
+document.getElementById("booking-form").addEventListener("submit", e=>{
+  e.preventDefault();
+  alert("გმადლობთ — კონსულტაცია დაჯავშნილია!");
+  closeModal();
+  e.target.reset();
+});
+
+const mobileToggle = document.querySelector(".mobile-toggle");
+const navList = document.querySelector("nav ul");
+
+mobileToggle?.addEventListener("click", ()=>{
+  const isOpen = mobileToggle.getAttribute("aria-expanded")==="true";
+  mobileToggle.setAttribute("aria-expanded", String(!isOpen));
+  navList.style.display = isOpen ? "none" : "flex";
+  navList.style.flexDirection="column";
+  navList.style.position="absolute";
+  navList.style.right="24px";
+  navList.style.top="64px";
+  navList.style.background="#fff";
+  navList.style.padding="12px";
+});
+</script>
+
+</body>
+</html>
