@@ -133,9 +133,94 @@
       </ul>
     </nav>
 
-    <a class="cta" id="book-now">დაჯავშნე კონსულტაცია</a>
+ <section id="contact" class="section">
+  <div class="container" style="max-width:600px;margin:0 auto;">
+    <h2>დაჯავშნეთ კონსულტაცია</h2>
+    <p style="color:#555;margin-bottom:20px;">
+      შეავსეთ ფორმა და მიიღებთ პასუხს ელ-ფოსტაზე. 
+    </p>
+
+    <form 
+      action="https://formspree.io/f/YOUR_FORMSPREE_ID" 
+      method="POST"
+    >
+      <!-- სახელი -->
+      <label style="display:block;margin-bottom:8px;font-weight:600;">
+        სახელი და გვარი
+      </label>
+      <input 
+        type="text" 
+        name="full_name" 
+        required
+        placeholder="მაგ: ხათუნა მანჯგალაძე"
+        style="width:100%;padding:10px 12px;margin-bottom:14px;border:1px solid #ddd;border-radius:8px;"
+      />
+
+      <!-- ელფოსტა -->
+      <label style="display:block;margin-bottom:8px;font-weight:600;">
+        ელ-ფოსტა
+      </label>
+      <input 
+        type="email" 
+        name="email" 
+        required
+        placeholder="anitsertsvadze108@gmail.com"
+        style="width:100%;padding:10px 12px;margin-bottom:14px;border:1px solid #ddd;border-radius:8px;"
+      />
+
+      <!-- ტელეფონი -->
+      <label style="display:block;margin-bottom:8px;font-weight:600;">
+        ტელეფონის ნომერი
+      </label>
+      <input 
+        type="tel" 
+        name="phone" 
+        placeholder="+995 5XX XX XX XX"
+        style="width:100%;padding:10px 12px;margin-bottom:14px;border:1px solid #ddd;border-radius:8px;"
+      />
+
+      <!-- საკითხი -->
+      <label style="display:block;margin-bottom:8px;font-weight:600;">
+        საკითხი
+      </label>
+      <select 
+        name="topic"
+        style="width:100%;padding:10px 12px;margin-bottom:14px;border:1px solid #ddd;border-radius:8px;"
+      >
+        <option value="კორპორატიული სამართალი">კორპორატიული სამართალი</option>
+        <option value="სამოქალაქო დავა">სამოქალაქო დავა</option>
+        <option value="ხელშეკრულებები">ხელშეკრულებები</option>
+        <option value="კონსულტაცია">საერთო კონსულტაცია</option>
+      </select>
+
+      <!-- შეტყობინება -->
+      <label style="display:block;margin-bottom:8px;font-weight:600;">
+        მოკლედ აღწერეთ თქვენი საქმე
+      </label>
+      <textarea 
+        name="message" 
+        rows="5" 
+        required
+        placeholder="მოკლედ აღწერე სიტუაცია, მნიშვნელოვანი თარიღები და კითხვები."
+        style="width:100%;padding:10px 12px;margin-bottom:16px;border:1px solid #ddd;border-radius:8px;resize:vertical;"
+      ></textarea>
+
+      <!-- Anti-spam / language field -->
+      <input type="hidden" name="_language" value="ka" />
+
+      <!-- Redirect thank-you page ან შეტყობინება -->
+      <!-- სურვილისამებრ შეგიძლიათ დაამატოთ: <input type="hidden" name="_redirect" value="https://anitsertsvadze108-pixel.github.io/ManjgaladzeandPartners/thanks.html" /> -->
+
+      <button 
+        type="submit"
+        style="background:#bfa15a;color:#111;border:none;padding:12px 20px;border-radius:999px;font-weight:600;cursor:pointer;"
+      >
+        გაგზავნა
+      </button>
+    </form>
   </div>
-</header>
+</section>
+
 
 <main class="container">
 
